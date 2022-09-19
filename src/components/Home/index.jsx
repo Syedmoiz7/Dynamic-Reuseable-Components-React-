@@ -8,11 +8,12 @@ function Home() {
   const clickHandler = () => {
     console.log("click handler")
     setLit(!isLit)
+    localStorage.setItem("class", `${isLit}`)
   }
 
   return (
     <div className={`room ${(isLit) ? "Lit" : "Dark"} `}>
-      Screen Mode {(isLit) ? "Lit" : "Dark"}
+      Screen Mode: {(isLit) ? "Light" : "Dark"}
       <br />
       <button onClick={clickHandler}>Toggle</button>
       <Clone />

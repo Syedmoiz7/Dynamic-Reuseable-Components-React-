@@ -1,6 +1,10 @@
 import './clone.css' 
+
+let imge = localStorage.getItem("class")
+console.log(imge);
+
 const Post = ({ name, profilePhoto, postTime, postText, postImage, }) => (
-    <div className='post'>
+    <div className=   {`post ${imge ?"Darke"  : "Lighte"  }`}>
       <div className='header'>
         <img className='image' src={profilePhoto} alt='Profile' />
   
@@ -28,8 +32,8 @@ const Post = ({ name, profilePhoto, postTime, postText, postImage, }) => (
   );
   
   function Clone() {
-    return <div className='cloningPage'>
-      <Post
+    return <div className="cloningPage">
+      <Post 
         name='Ahmer '
         profilePhoto='https://static8.depositphotos.com/1377527/930/i/600/depositphotos_9305412-stock-photo-businessman.jpg'
         postTime='21 Jan 2022'
