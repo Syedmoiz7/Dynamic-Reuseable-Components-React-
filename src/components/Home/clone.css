@@ -5,13 +5,10 @@
   } */
   .post {
     width: 300px;
-    /* border: 1px solid black; */
     border-radius: 20px;
-    /* background-color: white; */
-    /* border: 1px solid white; */
     margin: 20px;
     padding: 20px;
-    /* box-shadow: 0px 0px 20px  black; */
+
     
   }
   
@@ -55,11 +52,4 @@
     /* color: black; */
   }
 
-  .Darke {
-    box-shadow: 0px 0px 20px white;
-  }
-
-  .Lighte  {
-    box-shadow: 0px 0px 20px black;
-
-  }
+ 

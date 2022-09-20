@@ -13,9 +13,11 @@ function Home() {
 
   return (
     <div className={`room ${(isLit) ? "Lit" : "Dark"} `}>
+      <div className='logo'>
       Screen Mode: {(isLit) ? "Light" : "Dark"}
       <br />
       <button onClick={clickHandler}>Toggle</button>
+      </div>
       <Clone />
 
     </div>
