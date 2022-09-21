@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import "./index.css"
 import Clone from "./clone.jsx"
+import {BsFillMoonFill, BsSunFill} from 'react-icons/bs';
 
 function Home() {
   const [isLit, setLit] = useState(true);
@@ -14,9 +15,10 @@ function Home() {
   return (
     <div className={`room ${(isLit) ? "Lit" : "Dark"} `}>
       <div className='logo'>
+        <div className='screen'>
       Screen Mode: {(isLit) ? "Light" : "Dark"}
-      <br />
-      <button onClick={clickHandler}>Toggle</button>
+        </div>
+      <button onClick={clickHandler}>{(isLit) ? <BsSunFill/> : <BsFillMoonFill/>} </button>
       </div>
       <Clone />
 
